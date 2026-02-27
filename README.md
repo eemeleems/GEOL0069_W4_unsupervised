@@ -69,7 +69,7 @@ Read more about the missions here: [Sentinel-2](https://dataspace.copernicus.eu/
 
 ## Unsupervised Learning Models
 
-Unsupervised learning is a type of artificial intelligence in which models work without pre-defined labels (dataset is not classified under human supervision. Unlike supervised learning, unsupervised learning models are given unlabelled data and find patterns by grouping similar data points and finding hidden structures. 
+Unsupervised learning is a type of artificial intelligence in which models work without pre-defined labels (dataset is not classified under human supervision). Unlike supervised learning, unsupervised learning models are given unlabelled data and find patterns by grouping similar data points and finding hidden structures. 
 
 These algorithms are most appropriate for complex tasks like organising large datasets into clusters. There are a number of different clustering types, including exclusive ('hard'), overlapping ('soft'), hierarchical, and probabilistic.
 
@@ -225,3 +225,4 @@ Project Link: [https://github.com/eemeleems/GEOL0069_W4_unsupervised](https://gi
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
