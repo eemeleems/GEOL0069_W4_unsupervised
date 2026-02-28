@@ -54,7 +54,7 @@
 
 As polar regions experience rapid climate shifts, it is important to monitor the distribution of sea ice (frozen sea water floating on the ocean surface) and leads (linear fractures in the sea ice), to understand ocean-atmosphere heat exchange and safe ship navigation. Image processing is crucial to appropriately classify these two features, and this can be done using unsupervised machine learning.
 
-This project covers two unsupervised machine learning algorithms to differentiate sea ice and leads in satellite images. We use Sentinel-2 optical (OLCI) and Sentinel-3 altimetry (SRAL) data to classify them, and compare this with ground truth data from the European Space Agency (ESA). 
+This project covers two unsupervised machine learning algorithms to differentiate sea ice and leads in satellite images. We use Sentinel-2 optical (MSI) and Sentinel-3 altimetry (SRAL) data to classify them, and compare this with ground truth data from the European Space Agency (ESA). 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -63,6 +63,8 @@ This project covers two unsupervised machine learning algorithms to differentiat
 Sentinel-2 and Sentinel-3 are both observation missions from the European Space Agency (ESA) Copernicus Programme. We use both optical data and radar altimetry data as a multi-sensor approach to extend classification capabilities and improve reliability, such as where optical data experiences cloud cover.
 
 Read more about the missions here: [Sentinel-2](https://dataspace.copernicus.eu/data-collections/copernicus-sentinel-missions/sentinel-2) & [Sentinel-3](https://dataspace.copernicus.eu/explore-data/data-collections/sentinel-data/sentinel-3)
+
+You can also read more about the relevant instruments from the missions here: [Sentinel-2 MSI](https://www.earthdata.nasa.gov/data/instruments/sentinel-2-msi) & [Sentinel-3 Altimetry Data Guide](https://user.eumetsat.int/resources/user-guides/sentinel-3-altimetry-level-1-data-guide).
 
 <br/>
 
@@ -151,7 +153,7 @@ This process is repeated until convergence, meaning the parameters do not signif
 
 Radar altimetry is sensitive to orbital tracker inaccuracies and Mean Sea Surface (MSS) variations. To extract meaningful features and increase reliability, we implement a sub-pixel waveform alignment, with the methodology produced by the Alfred Wegener Institute (AWI).
 
-Using FFT (Fast Fourier Transform) Oversampling, we realign the echoes to a common reference. This process reduces noise in the Peakiness and SSD calculations, significantly increasing the separation between the "Ice" and "Lead" clusters in the feature space.
+Using FFT (Fast Fourier Transform) Oversampling, we realign the echoes to a common reference. This process reduces noise in the Peakiness and SSD calculations, significantly increasing the separation between the 'ice' and 'lead' clusters in the feature space.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -199,9 +201,9 @@ Before completing the notebook provided in this repository, please extract and c
 
 **Names of the Sentinel 2 and Sentinel-3 data folders used within this project:**
 
-* Sentinel-2 optical data : S2A_MSIL1C_20190301T235611_N0207_R116_T01WCU_20190302T014622.SAFE
+* Sentinel-2 (MSI) data : S2A_MSIL1C_20190301T235611_N0207_R116_T01WCU_20190302T014622.SAFE
 
-* Sentinel-3 OLCI data : S3B_SR_2_LAN_SI_20190301T231304_20190301T233006_20230405T162425_1021_022_301______LN3_R_NT_005.SEN3
+* Sentinel-3 (SRAL) data : S3B_SR_2_LAN_SI_20190301T231304_20190301T233006_20230405T162425_1021_022_301______LN3_R_NT_005.SEN3
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -225,4 +227,5 @@ Project Link: [https://github.com/eemeleems/GEOL0069_W4_unsupervised](https://gi
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
